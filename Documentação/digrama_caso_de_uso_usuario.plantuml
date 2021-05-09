@@ -1,0 +1,14 @@
+@startuml
+skinparam actorStyle awesome
+left to right direction
+Paciente --> (Cadastrar cliente)
+Paciente --> (Buscar professional)
+Paciente --> (Vizualizar conversas)
+Paciente --> (Inciar conversa com professional)
+Paciente --> (Vizualizar atendimento)
+Paciente --> (Cadastrar Atendimento)
+Paciente --> (Iniciar consulta por video)
+Paciente --> (Vizualizar consultas por video)
+
+
+@enduml

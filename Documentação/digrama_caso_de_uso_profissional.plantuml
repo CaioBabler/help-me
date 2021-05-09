@@ -1,0 +1,12 @@
+@startuml
+skinparam actorStyle awesome
+left to right direction
+
+Professional --> (Vizualizar conversas)
+Professional --> (Vizualizar atendimento)
+Professional --> (Aceitar atendimentos)
+Professional --> (Iniciar consulta por video)
+Professional --> (Vizualizar consultas por video)
+
+
+@enduml

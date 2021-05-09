@@ -1,0 +1,43 @@
+@startuml
+Person  o--  AppointmentModel
+Person o--  MessageModel
+TalkModel o-- Person
+
+
+class AppointmentModel {
+    type:String;
+    timeCourse:String;
+    id_professional : String;
+    id_patient :  String;
+    dateAppointment : DateTime;
+    status :String;
+}
+
+class MessageModel {
+    messageText:String ;
+    id_owner : String ;
+    id_sender : String ;
+    sendDateTime : DateTime ;
+}
+interface Person {
+    id:String ;
+    name:String;
+    messages:List<MessageModel>
+    Appointments:List<AppointmentModel>
+}
+class Professional implements Person{
+   name:String;
+   city:String;
+
+}
+class TalkModel {
+    owner:Person;
+    userAuth:Person;
+    creatAt:DateTime ;
+    lastMessage :String;
+}
+class UserModel implements Person {
+   password String
+   email String;
+}
+@enduml
